@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import Weather from './Api'
+import Header from './header'
 
 function App() {
 
   return (
     <>
-    HELLO this is React First Project
+    <Header/>
+    <Weather/>
     </>
   )
 }

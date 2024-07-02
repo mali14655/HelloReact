@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    /* margin-top: 5vh; */
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.maindiv{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+input{
+    height: 5vh;
+    padding-left: 1vh;
+    width: 15vw;
+    border: 1px solid grey;
+    border-radius: 1vh;
+    outline: none;
+}
+/* input:focus{
+    background-color:rgb(145, 182, 250);
+    color: white;
+
+} */
+
+button{
+    color: white;
+    border: none;
+    height: 5vh;
+    width: 8vw;
+    border-radius: 1vh;
+    background-color: rgb(49, 49, 245);
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    box-shadow:rgb(5, 5, 112) 0px 0px 10px 5px inset ;
+}
+
+.formdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+    width: 30vw;
+    /* border: 1px solid black; */
+    /* background-color: rgb(145, 182, 250); */
+    background-color: rgb(128, 230, 230);
+    border-radius:2vh 2vh 0 0 ;
+}
+.datadiv{
+    background-color: rgb(128, 230, 230);
+    border-radius: 0 0 2vh 2vh;
+    color: white;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+    /* border: 1px solid black; */
+}
+
+@media(max-width:850px) {
+    .formdiv{
+        width: 60vw;
+    }
+    .datadiv{
+        width: 60vw;
+    }
+    button{
+        width: 80%;
+    }
+    input{
+        width:120% ;
+    }
+    
+}
+
